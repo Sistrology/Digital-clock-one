@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display time on website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+        <img src="C:\Users\HP\OneDrive\Desktop\ALL FILES FIZA\All Practise Fizza\HTML & CSS & JAVASCRIPT\Digital Clock\image\view-boat-water_23-2150785188.avif" alt="">
+        <h1 id="current-time"></h1>
+    </div>
+    <div class="quotes">
+        <p>Today's quotes</p>
+        <h2>Lost time in never found again.</h2>
+    </div>
+ <script>
+    let time = document.getElementById("current-time")
+
+    setInterval(() =>{
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    },1000)
+   
+ </script>   
+</body>
+</html>
